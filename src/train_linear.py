@@ -14,7 +14,7 @@ b = torch.nn.Parameter(torch.tensor(0.0))
 
 #3 优化器
 
-optimizer = torch.optim.SGD([w,b],lr=1e-4)
+optimizer = torch.optim.SGD([w,b],lr=0.01)
 
 #4.xunlian
 
