@@ -13,10 +13,10 @@ def validate_record(record):
     for field in ("id","text"):
         if field not in record:
             raise ValueError(f"record must contain '{field}' field,but not found")
-            if not isinstance(record[field],str):
-                raise ValueError(f"{field} must be a string")
-            if not record[field].strip():
-                raise ValueError(f"{field} must not be empty or whitspace")
+        if not isinstance(record[field],str):
+            raise ValueError(f"{field} must be a string")
+        if not record[field].strip():
+            raise ValueError(f"{field} must not be empty or whitspace")
 
 def read_jsonl(path) -> list[dict]:#测试文件路径的
     records = []
